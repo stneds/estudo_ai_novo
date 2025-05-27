@@ -174,7 +174,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ? const Center(child: CircularProgressIndicator())    // Mostra loading
           : materias.isEmpty
           ? _buildEmptyState()                                  // Mostra tela vazia
-          : _buildMateriasList(),                              // Mostra lista de matérias
+          : _buildMateriasList(),
+      ),                             // Mostra lista de matérias
       
       // Botão flutuante para adicionar novas matérias
       floatingActionButton: FloatingActionButton(
@@ -344,3 +345,4 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
