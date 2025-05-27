@@ -162,9 +162,15 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      
+      body: Container(
+    decoration: BoxDecoration(
+    image: DecorationImage(
+    image: AssetImage('assets/images/Papel de Parede Adesivo NUVEM.jpeg'), // Altere o caminho para sua imagem
+    fit: BoxFit.cover,
+      ),
+    ),
       // Corpo principal da tela - usa condicionais para decidir o que exibir
-      body: isLoading
+      child: isLoading
           ? const Center(child: CircularProgressIndicator())    // Mostra loading
           : materias.isEmpty
           ? _buildEmptyState()                                  // Mostra tela vazia
