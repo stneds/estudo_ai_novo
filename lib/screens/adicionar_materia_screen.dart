@@ -58,7 +58,7 @@ class _AdicionarMateriaScreenState extends State<AdicionarMateriaScreen> {
   }
 
   // Método que exibe um diálogo com caracteres especiais para facilitar digitação
-  void _mostrarCaracteresEspeciais() {
+  /*void _mostrarCaracteresEspeciais() {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -89,7 +89,7 @@ class _AdicionarMateriaScreenState extends State<AdicionarMateriaScreen> {
               );
               // Fecha o diálogo
               Navigator.pop(context);
-            },
+            },*/
             // Visual de cada caractere no diálogo
             child: Container(
               padding: const EdgeInsets.all(12),
@@ -170,11 +170,11 @@ class _AdicionarMateriaScreenState extends State<AdicionarMateriaScreen> {
                             // Ícone à esquerda do campo
                             prefixIcon: const Icon(Icons.book),
                             // Botão de caracteres especiais à direita
-                            suffixIcon: IconButton(
+                            /*suffixIcon: IconButton(
                               icon: const Icon(Icons.text_fields),
                               onPressed: _mostrarCaracteresEspeciais,
                               tooltip: 'Caracteres especiais',
-                            ),
+                            ),*/
                             // Estilo da borda do campo
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(8),
